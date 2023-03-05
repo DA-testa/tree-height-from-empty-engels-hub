@@ -40,7 +40,7 @@ def rec(node):
 def main():
     """Main"""
     # implement input form keyboard and from files
-    inp = input().capitalize()
+    inp = input()
     if 'F' in inp:
         file_n = input()
         if 'a' in file_n:
@@ -69,5 +69,5 @@ def main():
 sys.setrecursionlimit(10**7)  # max depth of recursion
 threading.stack_size(2**27)   # new thread will get stack of such size
 threading.Thread(target=main).start()
-main()
+#main()
 # print(numpy.array([1,2,3]))
